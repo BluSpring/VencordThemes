@@ -55,3 +55,31 @@ body {
 .vc-settings-quickActions-pill {
     background: color-mix(in oklab, var(--theme-base-color), var(--background-secondary) 40%);
 }
+
+/* Fix upload area */
+ul[class^="channelAttachmentArea_"] {
+    background-color: rgba(0, 0, 0, 0.25) !important;
+}
+
+/* Fix message popover buttons */
+div[class^="buttonsInner_"][class*="popover_"] {
+    background-color: color-mix(in oklab, var(--theme-base-color), var(--background-secondary) 40%);
+}
+
+/* Fix account profile in settings */
+div[class^="accountProfileCard_"] {
+    background: color-mix(in oklab, var(--theme-base-color) 80%, var(--background-tertiary) 10%);
+}
+
+div[class^="accountProfileCard_"] div[class^="background_"] {
+    background: color-mix(in oklab, var(--theme-base-color) 80%, var(--background-secondary) 60%);
+}
+
+div[class^="accountProfileCard_"] div[class^="fieldList_"] {
+    background: color-mix(in oklab, var(--theme-base-color) 80%, var(--background-secondary) 60%);
+}
+
+/* Fix mic notches */
+svg[class^="notches_"][class*="gray_"] {
+    color: color-mix(in oklab, var(--theme-base-color) 80%, var(--background-primary) 40%);
+}
