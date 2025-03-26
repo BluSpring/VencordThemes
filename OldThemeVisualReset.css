@@ -1,0 +1,88 @@
+/*
+    Some of my own Visual Refresh modifications to look closer to the older Discord theme.
+    While I believe Visual Refresh looks pretty good, I am very autistic and do not like change. These modifications
+    make my brain a little more comfortable with the change though.
+
+    @author BluSpring
+*/
+
+/* align chat with profile */
+div[class^="layers_"] div[class^="container"] {
+    --custom-chat-input-margin-bottom: 22px;
+}
+
+:root {
+    --custom-channel-textarea-text-area-height: 42px;
+}
+
+.visual-refresh .base_b88801 {
+    font-size: 13.5px;
+    height: 18px;
+}
+
+/* smaller title bar */
+.visual-refresh {
+    --custom-app-top-bar-height: 24px;
+}
+
+/* Larger margin for message bar */
+.visual-refresh form[class^="form_"][class*="formWithLoadedChatInput_"] {
+    margin-top: 4px;
+}
+
+/* moved profile box */
+.visual-refresh section[class^="panels_"] {
+    bottom: 0;
+    left: var(--custom-guild-list-width);
+    width: calc(100% - var(--custom-guild-list-width));
+}
+
+/* adjust guilds margin after moving profile box */
+.visual-refresh nav[class^="wrapper_"][class*="guilds_"] {
+    margin-bottom: 0;
+}
+
+/* smaller DM list */
+.visual-refresh div[class^="sidebarList_"] {
+    --custom-guild-sidebar-width: 330px;
+}
+
+/* make guilds circular, and have a hover animation */
+.visual-refresh div[class^="blobContainer_"] svg foreignObject {
+    transition: 0.4s all linear;
+    border-radius: 100%;
+}
+
+.visual-refresh div[class^="blobContainer_"] svg foreignObject:has(div[class^="wrapper__"][class*="selected__"]) {
+    border-radius: revert;
+}
+
+/* make guild icons slightly larger */
+.visual-refresh div[class^="blobContainer_"] svg {
+    transform: scale(1.15);
+}
+
+/* increase spacing between guild icons */
+.visual-refresh div[class^="itemsContainer_"] div[class^="stack_"] {
+    gap: var(--space-sm) !important;
+}
+
+/* increase spacing between guild icons in folder */
+.visual-refresh div[class^="itemsContainer_"] ul[id^="folder-items-"] {
+    gap: var(--space-sm) !important;
+    height: calc(100%) !important;
+    padding-bottom: 8px !important;
+    padding-top: 4px !important;
+}
+
+/* increase folder icon size */
+.visual-refresh div[class^="folderIcon_"] div[class^="wrapper_"] svg {
+    transform: scale(1.15);
+}
+
+/* modify folder background radius */
+.visual-refresh span[class^="expandedFolderBackground_"] {
+    border-radius: 24px;
+    width: calc(var(--guildbar-folder-size) + 4px);
+    left: calc(var(--custom-guild-list-padding) - var(--guildbar-folder-size)/2 + var(--guildbar-avatar-size)/2 - 2px);
+}

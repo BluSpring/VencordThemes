@@ -1,0 +1,16 @@
+/*
+    With Nitro themes, the text gets tinted by the theme's colours. I'm not a fan of this, so I did this.
+
+    @author BluSpring
+*/
+
+/* Make text not tinted purple */
+.custom-theme-background {
+    --theme-text-color-amount: 0%;
+    --theme-base-color-amount: 0%;
+}
+
+/* Fix menu background with this change */
+:where(.visual-refresh) div[class^="menu_"] {
+    background: var(--theme-base-color);
+}

@@ -1,0 +1,50 @@
+/*
+    Vencord's SpotifyControls plugin, while it looks neat and is very functional, it feels too cluttered for me.
+    I much preferred Powercord's integration style for it, but since Powercord doesn't exist anymore and since Replugged is
+    barely even Powercord anymore, I decided to just try to recreate it as best as I could.
+
+    @author BluSpring
+*/
+
+/* Make Spotify modal look like Powercord's */
+div:has(> span.vc-spotify-album) {
+    display: none;
+}
+
+[class^=userProfileModalOverlayBackground_]:not(:has([class^=bot_])) [class^=tabBar_] :nth-last-child(2) {
+    order: 1;
+}
+
+#vc-spotify-info-wrapper img {
+    height: 48px;
+}
+
+.vc-spotify-progress-time {
+    display: none;
+}
+
+#vc-spotify-player:hover .vc-spotify-progress-time {
+    display: block;
+}
+
+#vc-spotify-progress-bar > [class^="slider"] [class^="barFill"] {
+    background-color: var(--vc-spotify-green);
+    border-color: var(--vc-spotify-green);
+    color: var(--vc-spotify-green);
+}
+
+#vc-spotify-info-wrapper {
+    height: 2.5em !important;
+}
+
+#vc-spotify-progress-bar {
+    margin-bottom: 0px !important;
+}
+
+#vc-spotify-player {
+    padding-bottom: 0rem !important;
+}
+
+#vc-spotify-song-title {
+    font-weight: 500 !important;
+}
