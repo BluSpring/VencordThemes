@@ -85,8 +85,17 @@ div[class^="upperBadge_"] {
     transform: translateX(4px) translateY(-4px);
 }
 
-.visual-refresh div[class^="blobContainer_"] svg rect[class^="badgeStroke_"] {
+.visual-refresh div[class^="blobContainer_"] svg rect[class^="badgeStroke_"][id*="upper_badge_masks"] {
     transform: translate(2px, -2px) !important;
+}
+
+/* Adjust mention badges in guilds */
+.visual-refresh div[class^="lowerBadge_"] div[class^="numberBadge_"] {
+    transform: translate(4px, 4px) !important;
+}
+
+.visual-refresh div[class^="blobContainer_"] svg rect[class^="badgeStroke_"][id*="lower_badge_masks"] {
+    transform: translate(2px, 2px) !important;
 }
 
 /* modify folder background radius */
