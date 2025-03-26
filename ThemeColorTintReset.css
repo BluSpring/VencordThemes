@@ -14,3 +14,26 @@
 :where(.visual-refresh) div[class^="menu_"] {
     background: var(--theme-base-color);
 }
+
+/* Fix tooltip background */
+:where(.visual-refresh) div[class^="tooltip_"] {
+    background: var(--theme-base-color);
+}
+
+/* Fix settings screen */
+.visual-refresh div[class^="standardSidebarView_"] {
+    background: var(--theme-base-color);   
+}
+
+.visual-refresh div[class^="sidebarRegionScroller_"] {
+    background: var(--theme-base-color);   
+}
+
+.visual-refresh div[class^="contentRegion_"] {
+    background: var(--theme-base-color);   
+}
+
+/* Use brighter mix for settings content */
+.visual-refresh div[class^="contentRegionScroller_"] {
+    background: color-mix(in oklab, var(--theme-base-color), var(--background-primary) 30%);   
+}
