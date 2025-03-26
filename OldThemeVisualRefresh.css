@@ -85,7 +85,7 @@ div[class^="upperBadge_"] {
     transform: translateX(4px) translateY(-4px);
 }
 
-.visual-refresh div[class^="blobContainer_"] svg rect[class^="badgeStroke_"][id*="upper_badge_masks"] {
+.visual-refresh svg rect[class^="badgeStroke_"][id*="upper_badge_masks"] {
     transform: translate(2px, -2px) !important;
 }
 
@@ -94,7 +94,7 @@ div[class^="upperBadge_"] {
     transform: translate(4px, 4px) !important;
 }
 
-.visual-refresh div[class^="blobContainer_"] svg rect[class^="badgeStroke_"][id*="lower_badge_masks"] {
+.visual-refresh svg rect[class^="badgeStroke_"][id*="lower_badge_masks"] {
     transform: translate(2px, 2px) !important;
 }
 
@@ -112,4 +112,13 @@ div[class^="tutorialContainer_"] {
   
 div[class^="listItemWrapper_"] div[class^="wrapper_"] svg {
     transform: scale(1.15);
+}
+
+/* Resize VC text */
+div[class*="rtcConnectionStatusLabel_"] div[class^="text-md/medium_"] {
+    font-size: 100%;
+}
+
+div[class*="rtcConnectionStatusWrapper_"] a div[class*="text-sm/medium_"] {
+    font-size: 100%;
 }
