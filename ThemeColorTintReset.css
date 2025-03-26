@@ -37,3 +37,21 @@
 .visual-refresh div[class^="contentRegionScroller_"] {
     background: color-mix(in oklab, var(--theme-base-color), var(--background-primary) 30%);   
 }
+
+/* Fix card colours */
+body {
+    --card-primary-bg: color-mix(in oklab, var(--theme-base-color), var(--background-primary) 30%);
+}
+
+.visual-refresh div[class^="itemCard_"] {
+    background: color-mix(in oklab, var(--theme-base-color), var(--background-secondary) 40%);
+}
+
+.visual-refresh div[class^="itemCard_"] div[class^="wrapper_"] {
+    background: color-mix(in oklab, var(--theme-base-color), var(--background-secondary) 80%);
+}
+
+/* Fix button colours */
+.vc-settings-quickActions-pill {
+    background: color-mix(in oklab, var(--theme-base-color), var(--background-secondary) 40%);
+}
