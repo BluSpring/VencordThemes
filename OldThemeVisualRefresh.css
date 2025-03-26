@@ -80,6 +80,15 @@ div[class^="layers_"] div[class^="container"] {
     transform: scale(1.15);
 }
 
+/* Adjust VC badges in guilds */
+div[class^="upperBadge_"] {
+    transform: translateX(4px) translateY(-4px);
+}
+
+.visual-refresh div[class^="blobContainer_"] svg rect[class^="badgeStroke_"] {
+    transform: translate(2px, -2px) !important;
+}
+
 /* modify folder background radius */
 .visual-refresh span[class^="expandedFolderBackground_"] {
     border-radius: 24px;
