@@ -83,3 +83,12 @@ div[class^="accountProfileCard_"] div[class^="fieldList_"] {
 svg[class^="notches_"][class*="gray_"] {
     color: color-mix(in oklab, var(--theme-base-color) 80%, var(--background-primary) 40%);
 }
+
+/* Fix large profile card */
+:root {
+    --modal-background: color-mix(in oklab, var(--theme-base-color) 80%, var(--background-secondary) 60%) !important;
+}
+
+[class^="root__"] [class^="outer_"] {
+    --background-surface-high: color-mix(in oklab, var(--theme-base-color) 80%, var(--background-secondary) 60%);
+}
