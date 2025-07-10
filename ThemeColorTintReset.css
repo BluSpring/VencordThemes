@@ -7,53 +7,53 @@
 /* Make text not tinted purple */
 .custom-theme-background {
     --theme-text-color-amount: 0%;
-    --theme-base-color-amount: 0%;
+    --custom-theme-base-color-amount: 0%;
 }
 
 /* Fix menu background with this change */
 :where(.visual-refresh) div[class^="menu_"] {
-    background: var(--theme-base-color);
+    background: var(--custom-theme-base-color);
 }
 
 /* Fix tooltip background */
 :where(.visual-refresh) div[class^="tooltip_"] {
-    background: var(--theme-base-color);
+    background: var(--custom-theme-base-color);
 }
 
 /* Fix settings screen */
 .visual-refresh div[class^="standardSidebarView_"] {
-    background: var(--theme-base-color);   
+    background: var(--custom-theme-base-color);   
 }
 
 .visual-refresh div[class^="sidebarRegionScroller_"] {
-    background: var(--theme-base-color);   
+    background: var(--custom-theme-base-color);   
 }
 
 .visual-refresh div[class^="contentRegion_"] {
-    background: var(--theme-base-color);   
+    background: var(--custom-theme-base-color);   
 }
 
 /* Use brighter mix for settings content */
 .visual-refresh div[class^="contentRegionScroller_"] {
-    background: color-mix(in oklab, var(--theme-base-color), var(--background-primary) 30%);   
+    background: color-mix(in oklab, var(--custom-theme-base-color), var(--background-primary) 30%);   
 }
 
 /* Fix card colours */
 body {
-    --card-primary-bg: color-mix(in oklab, var(--theme-base-color), var(--background-primary) 30%);
+    --card-primary-bg: color-mix(in oklab, var(--custom-theme-base-color), var(--background-primary) 30%);
 }
 
 .visual-refresh div[class^="itemCard_"] {
-    background: color-mix(in oklab, var(--theme-base-color), var(--background-secondary) 40%);
+    background: color-mix(in oklab, var(--custom-theme-base-color), var(--background-secondary) 40%);
 }
 
 .visual-refresh div[class^="itemCard_"] div[class^="wrapper_"] {
-    background: color-mix(in oklab, var(--theme-base-color), var(--background-secondary) 80%);
+    background: color-mix(in oklab, var(--custom-theme-base-color), var(--background-secondary) 80%);
 }
 
 /* Fix button colours */
 .vc-settings-quickActions-pill {
-    background: color-mix(in oklab, var(--theme-base-color), var(--background-secondary) 40%);
+    background: color-mix(in oklab, var(--custom-theme-base-color), var(--background-secondary) 40%);
 }
 
 /* Fix upload area */
@@ -63,32 +63,32 @@ ul[class^="channelAttachmentArea_"] {
 
 /* Fix message popover buttons */
 div[class^="buttonsInner_"][class*="popover_"] {
-    background-color: color-mix(in oklab, var(--theme-base-color), var(--background-secondary) 40%);
+    background-color: color-mix(in oklab, var(--custom-theme-base-color), var(--background-secondary) 40%);
 }
 
 /* Fix account profile in settings */
 div[class^="accountProfileCard_"] {
-    background: color-mix(in oklab, var(--theme-base-color) 80%, var(--background-tertiary) 10%);
+    background: color-mix(in oklab, var(--custom-theme-base-color) 80%, var(--background-tertiary) 10%);
 }
 
 div[class^="accountProfileCard_"] div[class^="background_"] {
-    background: color-mix(in oklab, var(--theme-base-color) 80%, var(--background-secondary) 60%);
+    background: color-mix(in oklab, var(--custom-theme-base-color) 80%, var(--background-secondary) 60%);
 }
 
 div[class^="accountProfileCard_"] div[class^="fieldList_"] {
-    background: color-mix(in oklab, var(--theme-base-color) 80%, var(--background-secondary) 60%);
+    background: color-mix(in oklab, var(--custom-theme-base-color) 80%, var(--background-secondary) 60%);
 }
 
 /* Fix mic notches */
 svg[class^="notches_"][class*="gray_"] {
-    color: color-mix(in oklab, var(--theme-base-color) 80%, var(--background-primary) 40%);
+    color: color-mix(in oklab, var(--custom-theme-base-color) 80%, var(--background-primary) 40%);
 }
 
 /* Fix large profile card */
 :root {
-    --modal-background: color-mix(in oklab, var(--theme-base-color) 80%, var(--background-secondary) 60%) !important;
+    --modal-background: color-mix(in oklab, var(--custom-theme-base-color) 80%, var(--background-secondary) 60%) !important;
 }
 
 [class^="root__"] [class^="outer_"] {
-    --background-surface-high: color-mix(in oklab, var(--theme-base-color) 80%, var(--background-secondary) 60%);
+    --background-surface-high: color-mix(in oklab, var(--custom-theme-base-color) 80%, var(--background-secondary) 60%);
 }
