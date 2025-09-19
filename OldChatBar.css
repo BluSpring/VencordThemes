@@ -1,0 +1,39 @@
+/*
+    My modifications to make the chat bar look like the old one again,
+    additionally with moving the typing text to the bottom like it was before.
+    
+    @author BluSpring
+*/
+
+/* Resizes the chat bar to be thin again */
+.align-chat-input [class*='rtcConnectionStatus__'] {
+  height: 48px;
+}
+
+.align-chat-input [class*='connection_'] {
+  height: 48px;
+}
+
+.align-chat-input [class*='attachWrapper_'] {
+  padding: var(--space-8) calc(var(--space-md) - 6px);
+}
+
+[class*='connection_'] > [class*='inner_'] {
+  height: 48px;
+}
+
+.align-chat-input [class*='scrollerSpacer__'] {
+  height: var(--space-16);
+}
+
+/* Moves the typing text to the bottom */
+.align-chat-input [class*='typing_'] {
+    bottom: 1px !important;
+    top: initial !important;
+}
+
+/* Removes the typing gradient */
+div[class*='typingGradientAtBottom__'] {
+  -webkit-mask: initial;
+  mask: initial;
+}
